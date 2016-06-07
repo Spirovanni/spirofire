@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
-import {FamiliesComponent} from 'views/+families';
+import { CareersComponent } from './+careers';
+import { FamiliesComponent } from './views/+families';
 
 @Component({
   moduleId: module.id,
@@ -12,7 +13,8 @@ import {FamiliesComponent} from 'views/+families';
   providers: [ROUTER_PROVIDERS]
 })
 @Routes([
-  {path: '/views/families', component: FamiliesComponent}
+    {path: '/careers', component: CareersComponent},
+    {path: '/views/families', component: FamiliesComponent},
 ])
 export class SpirofireAppComponent {
   title = 'Spirofire is Live!';
