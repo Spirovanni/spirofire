@@ -8,7 +8,7 @@ import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
   styleUrls: ['spirofire.component.css']
 })
 export class SpirofireAppComponent {
-  title = 'spirofire works!';
+  title = 'Spirofire is Live!';
   constructor(public af: AngularFire) {
     this.af.auth.subscribe(auth => console.log(auth));
   }

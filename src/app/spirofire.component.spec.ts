@@ -17,6 +17,6 @@ describe('App: Spirofire', () => {
 
   it('should have as title \'spirofire works!\'',
       inject([SpirofireAppComponent], (app: SpirofireAppComponent) => {
-    expect(app.title).toEqual('spirofire works!');
+    expect(app.title).toEqual('Spirofire is Live!');
   }));
 });
