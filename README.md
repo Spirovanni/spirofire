@@ -18,7 +18,7 @@ or to branch
 
 create a new branch named "feature_x" and switch to it using
 
-## git checkout -b feature_x
+## git checkout -b sandbox2
 
 switch back to master
 
@@ -26,7 +26,7 @@ switch back to master
 
 and delete the branch again
 
-## git branch -d feature_x
+## git branch -d sandbox2
 
 a branch is not available to others unless you push the branch to your remote repository
 
