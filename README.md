@@ -15,3 +15,19 @@ Your changes are now in the HEAD of your local working copy. To send those chang
 or to branch
 
 ## git push origin sandbox2
+
+create a new branch named "feature_x" and switch to it using
+
+## git checkout -b feature_x
+
+switch back to master
+
+## git checkout master
+
+and delete the branch again
+
+## git branch -d feature_x
+
+a branch is not available to others unless you push the branch to your remote repository
+
+## git push origin <branch>
