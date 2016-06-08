@@ -9,25 +9,25 @@ import {
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { CareersComponent } from './careers.component';
+import { FooterComponent } from './footer.component';
 
-describe('Component: Careers', () => {
+describe('Component: Footer', () => {
   let builder: TestComponentBuilder;
 
-  beforeEachProviders(() => [CareersComponent]);
+  beforeEachProviders(() => [FooterComponent]);
   beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) {
     builder = tcb;
   }));
 
-  it('should inject the component', inject([CareersComponent],
-      (component: CareersComponent) => {
+  it('should inject the component', inject([FooterComponent],
+      (component: FooterComponent) => {
     expect(component).toBeTruthy();
   }));
 
   it('should create the component', inject([], () => {
-    return builder.createAsync(CareersComponentTestController)
+    return builder.createAsync(FooterComponentTestController)
       .then((fixture: ComponentFixture<any>) => {
-        let query = fixture.debugElement.query(By.directive(CareersComponent));
+        let query = fixture.debugElement.query(By.directive(FooterComponent));
         expect(query).toBeTruthy();
         expect(query.componentInstance).toBeTruthy();
       });
@@ -37,10 +37,10 @@ describe('Component: Careers', () => {
 @Component({
   selector: 'test',
   template: `
-    <app-careers></app-careers>
+    <app-footer></app-footer>
   `,
-  directives: [CareersComponent]
+  directives: [FooterComponent]
 })
-class CareersComponentTestController {
+class FooterComponentTestController {
 }
 
