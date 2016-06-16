@@ -1,3 +1,28 @@
-<p>
+<h2>
   careers works!
-</p>
+</h2>
+
+<md-sidenav #sidenav mode="side" class="app-sidenav">
+  <md-nav-list>
+    <a md-list-item *ngFor="let view of views">
+      <md-icon md-list-icon>{{view.icon}}</md-icon>
+      <span md-line>{{view.name}}</span>
+      <span md-line class="secondary">{{view.description}}</span>
+      <!--<span md-line>{{view.code}}</span>-->
+    </a>
+  </md-nav-list>
+</md-sidenav>
+
+
+<p>Eat poop!</p>
+
+<form (submit)="careers.add({name: newCareer.value})">
+  <label for="newCareer">Add Career</label>
+  <input #newCareer>
+</form>
+<ul>
+  <li *ngfor="#career of careers | async">
+    Title: {{ career.name }}
+  </li>
+</ul>
+

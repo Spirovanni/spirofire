@@ -20,6 +20,7 @@
     "@angular/platform-browser": "2.0.0-rc.1",
     "@angular/platform-browser-dynamic": "2.0.0-rc.1",
     "@angular/router": "2.0.0-rc.1",
+    "@angular/router-deprecated" : "2.0.0-rc.1",
     "broccoli-merge-trees": "^1.1.1",
     "broccoli-postcss": "^3.0.0",
     "broccoli-sass": "^0.7.0",
@@ -63,3 +64,4 @@
     "typings": "^0.8.1"
   }
 }
+

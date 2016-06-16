@@ -1,3 +1,22 @@
+<div class="card-container">
+    <md-card *ngFor="let family of families | async">
+        <md-card-title>{{family.text}}</md-card-title>
+        <md-card-content class="secondary">
+            {{family.description}}. Your path is written in the stars but your actions here at this very moment sends a quake of anticipation throughout the universe!
+        </md-card-content>
+        <md-card-actions align="end">
+            <input type="text" #updatesize [value]="family.text" />
+            <button md-button (click)="update(family.$key, updatesize.value)" color="primary">Update</button>
+            <button md-button (click)="deleteFamily(family.$key)" color="primary">Delete</button>
+        </md-card-actions>
+    </md-card>
+</div>
+<input type="text" #newfamily />
+<input type="description" #newdescription />
+<button md-button (click)="add(newfamily.value, newdescription.value)" color="primary">Add</button>
+<button md-button (click)="deleteEverything()" color="primary">Delete All</button>
 <p>
   families works!
 </p>
+
+

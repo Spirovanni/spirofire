@@ -4,7 +4,8 @@
 /** Map relative paths to URLs. */
 const map: any = {
   'firebase': 'vendor/firebase/lib/firebase-web.js',
-  'angularfire2': 'vendor/angularfire2'
+  'angularfire2': 'vendor/angularfire2',
+  '@angular2-material': 'vendor/@angular2-material'
 };
 
 /** User packages configuration. */
@@ -85,7 +86,7 @@ const barrels: string[] = [
   '@angular/common',
   '@angular/compiler',
   '@angular/http',
-  '@angular/router',
+  '@angular/router-deprecated',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
 
@@ -93,11 +94,14 @@ const barrels: string[] = [
   'rxjs',
 
   // App specific barrels.
+
   'app',
   'app/shared',
-  'app/families',
   'app/+careers',
   'app/views/+families',
+  'app/views/feature/sidenav',
+  'app/views/feature/footer',
+  'app/views/+people',
   /** @cli-barrel */
 ];
 
